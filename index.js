@@ -2,6 +2,8 @@ const express = require('express')
 
 const server = express()
 
+const port = process.env.PORT || 3000
+
 server.use(express.json())
 
 const users = ['Tipscode', 'Dukeza', 'Tux']
@@ -42,4 +44,4 @@ server.delete('/users/:index', (req, res) => {
 })
 
 
-server.listen(process.env.PORT)
+server.listen(port)
