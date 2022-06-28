@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 
 server.use(express.json())
 
-const users = ['Tipscode', 'Dukeza', 'Tux']
+const users = ['Jhonattan', 'Aglailson', 'Computação em nuvem']
 
 server.get('/users', (req, res) =>{
     res.json(users)
