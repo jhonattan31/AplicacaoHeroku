@@ -9,13 +9,15 @@ server.use(express.json())
 const users = ['Tipscode', 'Dukeza', 'Tux']
 
 server.get('/users', (req, res) =>{
-    return res.json(users)
+    res.json(users)
+    res.send("aplicação rodando"+ users)
 })
 
 server.get('/users/:index', (req, res) =>{
     const { index } = req.params
 
-    return res.json(users[index])
+    res.json(users[index])
+    res.send("aplicação rodando"+ users[index])
 })
 
 server.post('/users', (req, res) => {
@@ -23,7 +25,8 @@ server.post('/users', (req, res) => {
 
     users.push(name)
 
-    return res.json(users)
+    res.json(users)
+    res.send("aplicação rodando"+ users)
 })
 
 server.put('/users/:index', (req, res) => {
@@ -32,7 +35,8 @@ server.put('/users/:index', (req, res) => {
 
     users[index] = name
 
-    return res.json(users)
+    res.json(users)
+    res.send("aplicação rodando"+ users)
 })
 
 server.delete('/users/:index', (req, res) => {
@@ -40,7 +44,8 @@ server.delete('/users/:index', (req, res) => {
 
     users.splice(index, 1)
 
-    return res.json(users)
+    res.json(users)
+    res.send("aplicação rodando"+ users)
 })
 
 
