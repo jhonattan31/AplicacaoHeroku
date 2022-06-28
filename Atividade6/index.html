@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+            <header class="cabecalho">
+                <h2 class="logo">UFC - Web</h2>
+                <div class="nome-user">
+                    
+                </div>
+            </header>
+            <div class="container-dados">
+                <div class="container-grupos">
+                    <div class="lista-grupos">
+                        
+                    </div>
+                    <form class="form-grupo">
+                        <input type="text" required placeholder="Inserir novo grupo">
+                        <button>OK</button>
+                    </form>
+                </div>
+                <div class="container-mensagens">
+                    <div class="lista-mensagens">
+                        <span>Selecione um grupo</span>
+                    </div>
+                    <form class="form-mensagem close">
+                        <input type="text" required placeholder="Escrever mensagem">
+                        <button>OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-modal">
+            <form class="form-nome">
+                <input type="text" required placeholder="Insira seu nome">
+                <button>OK</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
